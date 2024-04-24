@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturação</title>
+    <style>
+        span{
+            font-weight: bold;
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div id="menu lateral">
+        <div id="links">
+            <ul>
+                <li> <a href="link">Link</a></li>
+                <li> <a href="link">Link2</a></li>
+                <li> <a href="link">Link3</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <p> Dio<span>.</span>me</p>
+</body>
+</html>
