@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(0, 96, 136);
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: rgb(12, 202, 177);
+    padding: 1px 1px 0px;
+
+}
+.header {
+    background-color:black
+    min-height: 150px;
+    margin: auto;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(255, 255, 255);
+    min-height: 150px;
+}
+table {
+    -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+    box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+    border: solid 1px black;
+}
+table thead th {
+    border: solid 1px black;
+    background-color: rgb(0, 96, 136);
+    color: rgb(255, 255, 255);
+}
+table tfoot td {
+    background-color: gray;
+}
+table tbody tr:nth-child(even) td {
+    background-color:darkgrey;
+}
+table tbody tr:hover td {
+    background-color:aquamarine;
+    cursor:pointer
+}
