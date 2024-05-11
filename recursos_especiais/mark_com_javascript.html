@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Especiais - Mark e javascript</title>
+</head>
+<body>
+    <input type="text" id="busca"><br>
+    <p id="descricao">O futuro chegou, todos os dias falamos em IA e todos os dias falamos com alguém, cada vez mais
+        as pessoas estão se distanciando com a utilização da <code>Internet</code> que ironicamente foi criada para aproximar.
+        Jovens estão ficando com problemas sociais e psicológicos, pois buscam refúgio em redes sociais e jogos online. Plataformas
+        e Empresas se aponderam de técnicas de persuasão e dopamina diretamente no cerebro de seus clientes com videos prazerosos
+        utilizando Algoritmos que prendem a atenção do usuário e descobrem automáticamente quais seus interesses. Nós estamos
+        vivendo a matrix!! </p>
+        <script>
+            var searchField = document.getElementById('busca');
+            var descriptionObject = document.getElementById('descricao');
+            var textToSearch = descriptionObject.innerHTML;
+
+            function realizaBusca(busca) {
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+                const ocurrences = textToSearch.match(regex);
+                descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+            }
+
+            searchField.addEventListener('keyup', (e)=> realizaBusca(e.target.value));
+        </script>
+    
+</body>
+</html>
